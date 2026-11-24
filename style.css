@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    background-color:plum;
+}
+header {
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    position: fixed;
+}
+.header-logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.img-logo img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.header-logo span{
+    text-transform:uppercase;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+section{
+    padding: 50px 50px;
+}
+h1{
+    text-align: center;
+}
+.div-Lien a, button{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Accueil{
+    padding: 100px;
+  text-align: center;
+}
+#Accueil p{
+    line-height: 2em;
+}
+.section-content{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 3%;
+}
+.section-competences span{
+padding: 10px;
+background: lightgray;
+border-radius: 5px;
+margin: 1%;
+}
+.section-competences{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-content-left img{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.6em solid black;
+    border-bottom-width: 0.9em;
+    border-radius: 0.8em 0.8em 0 0;
+}
+.section-content-left::after {
+  content: "";
+  display: block;
+  height: 0.8em;
+  background: blueviolet;
+  border-radius: 0 0 1em 1em;
+}
+section hr{
+    width: 5%;
+    height: 3px;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+.form-section{
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: black 0 10px 12px;
+    margin: 25%;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+input,textarea{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+li a:hover{
+    color: blueviolet;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn{
+    margin-left:75%;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.section-content-left,
+.section-content-right {
+    flex:1;
+}
+@media (max-width: 700px) {
+  .section-content { flex-direction: column; }
+  section { padding: 30px 20px; }
+  .form-section { width: auto; margin: 0; padding: 20px; }
+  .btn { margin-left: 0; }
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: blueviolet;
+}
